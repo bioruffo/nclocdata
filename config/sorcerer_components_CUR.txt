@@ -1,0 +1,33 @@
+Bottle of Holy Water	1	C
+Bottle of Paradise Water	1	C
+Chunk of Stygian Iron	1	C
+Femur	1	C
+Handful of Grave Dirt	1	C
+Humerus	1	C
+Piece of Stygian Coal	1	C
+Rose	1	C
+Skull	1	C
+Handful of Horehound	1	C
+Batch of Mushrooms	2	U
+Bunch of Daisies	2	U
+Bunch of Paradise Lilies	2	U
+Chunk of Ivory	2	U
+Lead Brick	2	U
+Patch of Lichen	2	U
+Patch of Moss	2	U
+Chunk of Coral	2	U
+Silver Ingot	2	U
+Gold Ingot	2	U
+Chunk of Brimstone	2	U
+Pinch of Saltpeter	2	U
+Handful of Clover	2	U
+Bunch of Lilies	5	R
+Chunk of Onyx	5	R
+Spool of Copper Wire	5	R
+Sprig of Nightshade	5	R
+Chunk of Celestial Bronze	5	R
+Piece of Amber	5	R
+Nacre Shell	5	R
+Mandrake Root	5	R
+Sprig of Holly	5	R
+Handful of Red Clay	5	R

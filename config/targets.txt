@@ -1,0 +1,33 @@
+Apple	1
+Can of Preserved Meat	1
+Can of Pumpkin Soup	1
+Can of Creamed Corn	1
+Can of Green Beans	1
+Can of Peaches	1
+Can of Vegetable Soup	1
+Can of Ravioli	1
+Can of Chicken Soup	1
+Can of Chili con Carne	1
+Can of Black Beans	1
+Can of Tomato Soup	1
+Absinthe	1
+Bottle of Bourbon	1
+Bottle of Rum	1
+Bottle of Paradise Nectar	1
+Bottle of Vodka	1
+Bottle of Wine	1
+Broken Bottle	1
+Bottle of Mead	1
+Bottle of Beer	1
+Bottle of Paradise Water	1
+Bottle of Tequila	1
+Bottle of Moonshine	1
+Empty Beer Bottle	1
+Bottle of Whiskey	1
+Bottle of Port	1
+Bottle of Holy Water	1
+Bottle of Champagne	1
+Bottle of Fermented Blood	1
+Bottle of Scotch	1
+Potion	1
+Potion of Planar Protection	1

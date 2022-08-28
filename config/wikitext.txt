@@ -1,0 +1,233 @@
+{{ItemNav}}
+{{TOCalign|right}}
+
+Various items can be put together from their individual components by those characters with skills such as [[Alchemy]] and the higher branching levels of the [[Repair Item]] tree. Here is a list of the items that can be used in [[Crafting]] and [[Alchemy]].
+
+Crafting components cannot be broken via [[Decay#Death_Decay|death]].
+
+Main location drop rates are calculated for mortals, at day and with power when applicable.
+
+=Crafting Components=
+
+==Bag of Industrial Plastic==
+''This is a bag of raw industrial plastic chips.''
+
+'''Weight:''' 4
+
+==Batch of Leather==
+''A bunch of sheets and strips of cured leather.''
+
+'''Weight:''' 2
+
+==Chunk of Brass==
+''This is a block of cast brass, suitable for use in a forge.''
+
+'''Weight:''' 2
+
+==Chunk of Iron==
+''This is a heavy chunk of iron ore.''
+
+'''Weight:''' 2
+
+==Chunk of Steel==
+''This is a small block of steel. Flecks of rust dot its surface.''
+
+'''Weight:''' 2
+
+==Piece of Wood==
+''This is a solid chunk of high quality wood.''
+
+'''Weight:''' 3
+
+==Small Bottle of Gunpowder==
+<span id="Bottle of Gunpowder">&nbsp;</span>
+''This is a small amount of powder for use in the manufacture of pistol or rifle cartridges or shotgun shells.''
+
+'''Weight:''' 1
+
+'''Note:''' Can be set up for target shooting.
+
+=Alchemy Components=
+
+==Batch of Mushrooms==
+''This is a handful of mushrooms of various species and sizes.''
+
+'''Weight:''' 1
+
+==Bottle of Holy Water==
+''This is a small amount of water inside a bottle with a holy symbol on it.''
+
+'''Weight:''' 1
+
+'''Note:''' Can be set up for target shooting.
+
+==Bottle of Paradise Water==
+''This is a small bottle of water taken from the rivers in Paradise.''
+
+'''Weight:''' 1
+
+'''Note:''' Can be set up for target shooting.
+
+==Bunch of Daisies==
+''This is a simple and small bunch of daisy flowers.''
+
+'''Weight:''' 1
+
+==Bunch of Lilies==
+''This is a batch of lilies. They are blueish-purple in the center.''
+
+'''Weight:''' 1
+
+==Bunch of Paradise Lilies==
+''This is a batch of lilies that have been harvested in the plane of Paradise. They are a reddish-purple at the center.''
+
+'''Weight:''' 1
+
+==Chunk of Brimstone==
+''This small piece of lemon-yellow stone has a slightly greasy feel to it despite feeling somewhat brittle.''
+
+'''Weight:''' 2
+
+==Chunk of Celestial Bronze==
+''This is a block of cast bronze. Pale flecks of coppery light play across its surface.''
+
+'''Weight:''' 3
+
+==Chunk of Coral==
+''This is a small, fist-size chunk of nearly-bleached coral.''
+
+'''Weight:''' 2
+
+==Chunk of Ivory==
+''This is a chunk of ivory. Its edges are rough.''
+
+'''Weight:''' 1
+
+==Chunk of Onyx==
+''This is a small chunk of black rock.''
+
+'''Weight:''' 1
+
+==Chunk of Stygian Iron==
+''This is a heavy chunk of iron ore of demonic origin.''
+
+'''Weight:''' 2
+
+==Femur==
+''Bits of gristle remain around the knee of this bone.''
+
+'''Weight:''' 2
+
+'''Note''': Can be consumed by a Revenant with [[Shadow of the Wolf]].
+
+==Gold Ingot==
+''This is a small gold ingot, stamped with the mark of the Cordillera treasury.''
+
+'''Weight:''' 3
+
+'''Note:''' Can be consumed by a Fallen with [[Avaricious Oblation]].
+
+==Handful of Clover==
+''This is a handful of green clover leaves with a smattering of white and purple clover flowers.''
+
+'''Weight:''' 1
+
+==Handful of Grave Dirt==
+''This is a batch of dark, moist earth.''
+
+'''Weight:''' 1
+
+==Handful of Horehound==
+''This is a handful of fragrant oval-shaped leaves covered in white, wooley hairs.''
+
+'''Weight:''' 1
+
+==Handful of Red Clay==
+''This is small amount of dark red clay. It is pliable and seems warm to the touch.''
+
+'''Weight:''' 1
+
+==Humerus==
+''The elbow-side of this bone has been broken into a jagged edge, as if the arm were forcibly torn from the body.''
+
+'''Weight:''' 2
+
+'''Note''': Can be consumed by a Revenant with [[Shadow of the Wolf]].
+
+==Lead Brick==
+''This is a cast lead brick. It is very heavy for its size.''
+
+'''Weight:''' 3
+
+==Mandrake Root==
+''This is gnarled, thick root with several long protrusions.''
+
+'''Weight:''' 2
+
+==Nacre Shell==
+''This is a large mollusk shell with a brilliant, iridescent interior.''
+
+'''Weight:''' 3
+
+==Patch of Lichen==
+
+''This is a small patch of lichen, scraped from a rock.''
+
+'''Weight:''' 1
+
+==Patch of Moss==
+''This is a handful of moist, sticky moss.''
+
+'''Weight:''' 1
+
+==Piece of Amber==
+''This bit of hardened tree sap is a deep yellow with several air bubbles trapped inside.''
+
+'''Weight:''' 2
+
+==Piece of Stygian Coal==
+''This is a single brick of coal taken from the fire pits of [[Stygia]].''
+
+'''Weight:''' 1
+
+==Pinch of Saltpeter==
+''This is a small quantity of coarse, white powder. It has been carefully wrapped in a small sheet of wax paper.''
+
+'''Weight:''' 1
+
+==Rose==
+''This is a single red rose.''
+
+'''Weight:''' 1
+
+==Silver Ingot==
+''This is a small silver ingot, stamped with the mark of the Cordillera treasury.''
+
+'''Weight:''' 1
+
+'''Note:''' Can be consumed by a Fallen with [[Avaricious Oblation]].
+
+==Skull==
+''The skull is missing its jawbone and a few teeth. It is freshly macerated, however - small bits of meat still cling to the inside of its eyesockets.''
+
+'''Weight:''' 2
+
+'''Note:''' Can be set up for target shooting. Can be consumed by a Revenant with [[Shadow of the Wolf]].
+
+==Spool of Copper Wire==
+''This is a simple spool of copper wire - perhaps 20 meters.''
+
+'''Weight:''' 1
+
+==Sprig of Holly==
+''This is a small, green twig of holly with a few small, sharply-pointed leaves and a cluster of bright red berries still attached.''
+
+'''Weight:''' 1
+
+==Sprig of Nightshade==
+''This is a single flower of the nightshade (belladonna) plant.''
+
+'''Weight:''' 1
+
+[[Category:Items]]
+[[Category:Crafting Components]]
