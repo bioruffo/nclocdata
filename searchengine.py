@@ -89,12 +89,14 @@ class SearchEngine():
         count = 0
         for item in os.listdir(savedir):
             if item.endswith(".html"):
-                count += 1
                 with open(os.path.join(savedir, item), "rb") as f:
                     page = BeautifulSoup(f, "html.parser")
-                    if page.title.text != 'Void - Nexus Clash Wiki':
-                        instance = Location(page)
+                    instance = Location(page)
+                    if instance.ok:
                         locdict[instance.name] = instance
+                        count += 1
+                    else:
+                        print("Couldn't scrape any drop data from:", item)
         print("Loaded", count, "locations.")
         return locdict
    
