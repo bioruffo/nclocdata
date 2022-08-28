@@ -90,13 +90,12 @@ class SearchEngine():
         for item in os.listdir(savedir):
             if item.endswith(".html"):
                 count += 1
-                print(item)
                 with open(os.path.join(savedir, item), "rb") as f:
                     page = BeautifulSoup(f, "html.parser")
                     if page.title.text != 'Void - Nexus Clash Wiki':
                         instance = Location(page)
                         locdict[instance.name] = instance
-        print("Loaded", count, "items.")
+        print("Loaded", count, "locations.")
         return locdict
    
 
@@ -228,7 +227,7 @@ class SearchEngine():
                 items.update(set([item for item in orient["items"].keys() \
                                  if text in item.lower()])) 
         if toscreen:
-            print('\t1\n'.join(item for item in items)+"\t1")
+            print('\n'.join(item for item in items))
         return items
 
       
@@ -252,14 +251,14 @@ class SearchEngine():
         return pd.DataFrame(lines, columns = header)
         
         
-    def text_for_wiki(self, data: dict, full: int = 5, mention: int = 10) -> str:
+    def text_for_wiki(self, data: dict, complete: int, mention: int) -> str:
         """
         Parameters
         ----------
         data : dict
             a dictionary from the output of self.search_item()
-        full : int
-            The number of hits that should be returned as fulltext
+        complete : int
+            The number of hits that should be returned as completetext
         mention : int
             The number of hits that should be returned as simple listing of names.
         Returns
@@ -267,12 +266,18 @@ class SearchEngine():
         toprint
             a string with location find % that can be inserted into the Wiki page.
         """
+        
+        if not complete:
+            complete = 5
+        if not mention:
+            mention = 10
+        
         toprint = []
         also = []
         etctext = "and others"
         for i, (item, value) in enumerate(sorted(data.items(), key=lambda x:x[1], reverse=True)):
             name = item[:item.index("(")-1]
-            if (full == 0) or (i < full):
+            if (complete == 0) or (i < complete):
                 location = item[item.index("(")+1:-1]
                 if location == 'inside':
                     check = 'outside'
@@ -283,14 +288,14 @@ class SearchEngine():
                 else:
                     location = ''
                 toprint.append("\n* [[{}]]{}: {}".format(name, location, format_percent(value)))
-            elif i < full + mention:
+            elif i < complete + mention:
                 newtext = "[[{}]]".format(name)
                 if newtext not in also:
                     also.append("[[{}]]".format(name))
             elif etctext not in also:
                 also.append(etctext)
         toprint = "'''Main locations:''' \n" + ''.join(toprint) + '\n'
-        if len(data) > full:
+        if len(data) > complete:
             toprint = toprint + "'''Other locations:''' " + ', '.join(also) + '.\n\n'
         return toprint
     
