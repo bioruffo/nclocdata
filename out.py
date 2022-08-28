@@ -68,13 +68,13 @@ def clipboardwiki(search_engine, complete: int, mention: int) -> None:
     
 
 
-def wikitext(search_engine, original: str, complete: int, mention: int, insertafter: str = "''' Weight:'''") -> None:
+def wikitext(search_engine, original: str, complete: int, mention: int, insertafter: str = "'''Weight") -> None:
     '''
     From a plaintext file containing the Wikipedia entry, create and save
     a new file ("wikitext_out.txt") with added find information.
     
     '''
-    savename = "wikitext_out.tsv"
+    savename = "wikitext_out.txt"
     
     print("Saving to:", savename)
     if not complete:
@@ -88,11 +88,12 @@ def wikitext(search_engine, original: str, complete: int, mention: int, insertaf
     lastcomp = False
     with open(savename, "w") as f:
         for line in data:
+            f.write(line)
             if line.startswith("=="):
                 lastcomp = re.search("== ?([\S ]*?) ?==", line)[1]
             elif line.startswith(insertafter):
                 text = search_engine.text_for_wiki(\
                         search_engine.search_item(lastcomp), complete=complete, mention=mention)
                 lastcomp = False
-                f.write(text)               
-            f.write(line)    
+                f.write(text)
+                

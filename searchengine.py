@@ -294,9 +294,9 @@ class SearchEngine():
                     also.append("[[{}]]".format(name))
             elif etctext not in also:
                 also.append(etctext)
-        toprint = "'''Main locations:''' \n" + ''.join(toprint) + '\n'
+        toprint = "\n'''Main locations:''' \n" + ''.join(toprint) + '\n'
         if len(data) > complete:
-            toprint = toprint + "'''Other locations:''' " + ', '.join(also) + '.\n\n'
+            toprint = toprint + "'''Other locations:''' " + ', '.join(also) + '.\n'
         return toprint
     
     
