@@ -20,19 +20,20 @@ class SearchEngine():
     
     def __init__(self,
                  savedir: str = savedir,
+                 plane: str = '',
                  # Character-specific modifiers
                  # https://wiki.nexusclash.com/wiki/searching
-                 is_demon = False, # Demon classes have a bonus in Stygia
-                 rev_has_sod = False, # Revenant with Strength of Darkness
-                 rev_has_dw = False, # Revenant with Day Walker
-                 el_has_fa = False, # Elementalist with Fire Affinity
-                 hc_has_aoe = False, # Holy Champion with Aspect of the Eagle
+                 is_demon: bool = False, # Demon classes have a bonus in Stygia
+                 rev_has_sod: bool = False, # Revenant with Strength of Darkness
+                 rev_has_dw: bool = False, # Revenant with Day Walker
+                 el_has_fa: bool = False, # Elementalist with Fire Affinity
+                 hc_has_aoe: bool = False, # Holy Champion with Aspect of the Eagle
                  # Buffs
-                 encourage = False,
-                 divine_resolve = False
+                 encourage: bool = False,
+                 divine_resolve: bool = False
                  ):
         
-        self.locdict = self._create_locations_dict(savedir)
+        self.locdict = self._create_locations_dict(savedir, plane)
         
         self.base_mod = 0
         self.stygia_mod = 0
@@ -80,7 +81,7 @@ class SearchEngine():
         self.memoized_locs = self._memoize()        
         
 
-    def _create_locations_dict(self, savedir: str) -> dict:
+    def _create_locations_dict(self, savedir: str, plane: str = '') -> dict:
         '''
         Return a locations dictionary of the form: {"Location Name": <Location_instance>}
         '''
@@ -93,8 +94,9 @@ class SearchEngine():
                     page = BeautifulSoup(f, "html.parser")
                     instance = Location(page)
                     if instance.ok:
-                        locdict[instance.name] = instance
-                        count += 1
+                        if plane + " Locations" in instance.page.text:
+                            locdict[instance.name] = instance
+                            count += 1
                     else:
                         print("Couldn't scrape any drop data from:", item)
         print("Loaded", count, "locations.")
